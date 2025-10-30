@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Admin Dashboard – GreenVada</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script defer src="../js/admin.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="logo">🌿 GreenVada Admin</h1>
+      <nav class="nav">
+        <a href="admin.html" class="active">Dashboard</a>
+        <a href="admin_orders.html">Orders</a>
+        <a href="../index.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="admin-dashboard">
+    <div class="container">
+      <h2>📊 Admin Dashboard</h2>
+      <p class="sub">Manage products and monitor your GreenVada performance.</p>
+
+      <!-- Summary -->
+      <div class="admin-stats">
+        <div class="stat-card">
+          <h3 id="productCount">0</h3>
+          <p>Products</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="orderCount">0</h3>
+          <p>Orders</p>
+        </div>
+      </div>
+
+      <!-- Add Product Form -->
+      <section class="add-product">
+        <h3>Add New Product</h3>
+        <form id="addProductForm">
+          <input type="text" id="pName" placeholder="Product Name" required />
+          <textarea id="pDesc" placeholder="Description" required></textarea>
+          <input type="number" id="pPrice" placeholder="Price (₹)" required />
+          <input type="text" id="pImg" placeholder="Image URL" required />
+          <button type="submit" class="btn-primary">Add Product</button>
+        </form>
+      </section>
+
+      <!-- Product List -->
+      <section class="admin-products">
+        <h3>All Products</h3>
+        <div id="productList" class="product-grid"></div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: greenvada-backend
+    env: node
+    region: singapore
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    autoDeploy: true
+    plan: free

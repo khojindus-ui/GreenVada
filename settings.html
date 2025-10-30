@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Settings – GreenVada</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/dashboard.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="logo">🌿 GreenVada</h1>
+      <nav class="nav">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html" class="active">Settings</a>
+        <a href="shop.html">Shop</a>
+        <a href="#" id="logoutBtn">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="user-page">
+    <div class="container">
+      <h2>Preferences & Account Settings</h2>
+
+      <!-- 🌙 Theme Switch -->
+      <div class="settings-box">
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider"></span>
+        </label>
+        <span style="margin-left:10px;">Dark Mode</span>
+      </div>
+
+      <!-- 🧑 Account Settings -->
+      <form id="settingsForm" class="profile-form" style="margin-top:2rem;">
+        <label for="setName">Full Name</label>
+        <input type="text" id="setName" placeholder="Enter your full name" required>
+
+        <label for="setEmail">Email</label>
+        <input type="email" id="setEmail" placeholder="Enter your email" required>
+
+        <label for="setPass">Password</label>
+        <input type="password" id="setPass" placeholder="Enter new password" required>
+
+        <button type="submit" class="btn-primary full">Save Changes</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>

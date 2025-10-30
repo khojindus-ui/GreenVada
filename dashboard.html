@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard – GreenVada</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/dashboard.js"></script>
+</head>
+
+<body>
+  <!-- 🌿 HEADER -->
+  <header class="header">
+    <div class="container header-inner">
+      <h1 class="logo">🌿 GreenVada</h1>
+      <nav class="nav">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="profile.html">Profile</a>
+        <a href="settings.html">Settings</a>
+        <a href="shop.html">Shop</a>
+        <a href="index.html" id="logoutBtn">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 🌿 DASHBOARD BODY -->
+  <main class="dashboard">
+    <div class="container">
+      <h2>Welcome, <span id="userName">User</span> 👋</h2>
+      <p class="sub">Here’s an overview of your GreenVada activity.</p>
+
+      <div class="dash-cards">
+        <div class="dash-card">
+          <h3>My Orders</h3>
+          <p id="orderCount">0</p>
+          <a href="cart.html" class="btn-outline small">View Orders</a>
+        </div>
+
+        <div class="dash-card">
+          <h3>Wishlist</h3>
+          <p>Coming Soon 💚</p>
+        </div>
+
+        <div class="dash-card">
+          <h3>Profile</h3>
+          <a href="profile.html" class="btn-outline small">View Profile</a>
+        </div>
+      </div>
+
+      <section class="order-section">
+        <h3>Your Recent Orders</h3>
+        <div id="orderList" class="order-list">
+          <!-- JS will load orders here -->
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 🌿 FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 GreenVada. Sustainable Wellness for Everyone 🌱</p>
+    </div>
+  </footer>
+</body>
+</html>
