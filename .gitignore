@@ -1,0 +1,15 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Database files (optional - you can keep greenvada.db if you want)
+*.db
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
