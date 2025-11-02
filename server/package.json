@@ -3,16 +3,24 @@
   "version": "1.0.0",
   "description": "GreenVada API backend for herbal product store",
   "main": "server.js",
+  "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "init-db": "sqlite3 greenvada.db < init_db.sql"
+    "init-db": "node init_db.js"
   },
-  "keywords": ["greenvada", "api", "sqlite3", "express"],
+  "keywords": [
+    "greenvada",
+    "api",
+    "sqlite3",
+    "express"
+  ],
   "author": "GreenVada Dev Team",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^4.19.2",
-    "sqlite3": "^5.1.7"
+    "cors": "^2.8.5",
+    "sqlite3": "^5.1.6",
+    "@sendgrid/mail": "^8.1.0",
+    "dotenv": "^16.3.1"
   }
 }
